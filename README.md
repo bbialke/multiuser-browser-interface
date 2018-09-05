@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+*What things you need to install the software and how to install them*
 
 ```
 Node.js
@@ -19,13 +19,13 @@ Socket.io
 
 A step by step series of examples that tell you how to get a development env running
 
-Install Node.js (This will walk you through creating package.json as well
+1. Install Node.js (This will walk you through creating package.json as well)
 
 ```
 npm init
 ```
 
-Install socket.io (Express framework)
+2. Install socket.io (Express framework)
 
 ```
 npm install --save express socket.io
