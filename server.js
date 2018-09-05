@@ -6,15 +6,18 @@ var socketIO = require('socket.io');
 var app = express();
 var server = http.Server(app);
 var io = socketIO(server);
-app.set('port', 5000);
+//Config File
+const config = require("./config.json");
+
+app.set('port', config.port);
 app.use('/static', express.static(__dirname + '/static'));
 // Routing
 app.get('/', function(request, response) {
   response.sendFile(path.join(__dirname, 'index.html'));
 });
 // Starts the server.
-server.listen(5000, function() {
-  console.log('Server Starting, Port 5000');
+server.listen(config.port, function() {
+  console.log(`Server Starting, Port ${config.port}`);
 });
 // Add the WebSocket handlers
 io.on('connection', function(socket) {
