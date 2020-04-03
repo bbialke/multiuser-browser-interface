@@ -50,4 +50,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* (Subtle Fedora Tip to anyone who actually read this far)
+* All the wonderful people at Github and NPM
